@@ -50,6 +50,7 @@ print("IP" + " "*18+"MAC" + " "*18+"MAN")
 i = 0
 for client in clients:
     manufacturer = searchmac(client['mac'])
+    time.sleep(0.05)
     print("{:16}    {}".format(client['ip'], client['mac']) + " "*4 + manufacturer + '\n' + '-'*52 )
     time.sleep(1)
 
